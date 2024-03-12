@@ -1,0 +1,171 @@
+.logo-brian{
+    filter: invert(100%) grayscale(100%) ;
+    width: 5em;
+    position: relative;
+    padding: 0 auto;
+    transition: transform 0.5s; 
+
+}
+
+.logo-brian:hover{
+    transform: scale(1.5);
+    
+}
+.active{
+    background-color: #966900;
+    
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #5a1902;
+    color: #ffffff;
+    position: sticky;
+    z-index: 1;
+    top: 0;
+    transition: background-color 1s ease;
+}
+
+.navbar.scrolled {
+    background-color: #ffffffcf;
+    color: black;
+    height: auto;
+    .title{
+        color: black;
+    }
+    .link-navbar{
+        color: black;
+    }
+
+    .logo-brian{
+        width: 3em;
+        filter: invert(0%) grayscale(100%) ;
+
+    }
+
+    .contenedor-redes-sociales li .icono-red-social {
+        width: 1em;
+        height: 1em;    
+    }
+
+    .contenedor-redes-sociales li {
+        margin: auto 0.05px;
+
+
+    }
+}
+
+.navbar .title {
+    font-size: 1.5rem;
+    margin: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.navbar ul {
+    display: flex;
+}
+
+nav ul li {
+   list-style: none; 
+}
+
+.navbar ul li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 0.5rem;
+    margin: 0 0.5rem;
+    border-radius: 0.5rem;
+}
+
+.navbar ul li a:not(.active):hover {
+    background-color:#707070 ;
+}
+
+.navbar .menu {
+    display: none;
+    position: absolute;
+    top: 0.75rem;
+    right: 0.5rem;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 2.25rem;
+    height: 2rem;
+}
+
+.navbar .menu span {
+    height: 0.4rem;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 0.2rem;
+}
+
+
+@media (max-width: 580px) {
+    .navbar .menu {
+        display: flex;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        margin-bottom: 0.25rem;
+    }
+
+    .navbar ul.open {
+        display: flex;
+    }
+
+    .navbar ul li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar ul li a {
+        margin: 0.2rem 0.5rem;
+    }
+
+}
+
+
+.navbar-menu-icon {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.contenedor-redes-sociales li {
+    width: 1.5em;
+    height: 1.5em;
+    margin: auto 2px;
+    cursor: pointer;
+    transition: transform 0.5s; 
+    
+}
+
+
+.contenedor-redes-sociales li .icono-red-social {
+    width: 1.5em;
+    height: 1.5em;
+    margin: auto 10px;
+    transition: transform 0.5s; 
+
+}
+
+.contenedor-redes-sociales li .icono-red-social:hover {
+    transform: scale(1.5);
+}
