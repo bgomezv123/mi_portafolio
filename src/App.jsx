@@ -16,6 +16,9 @@ function App() {
           <Route path="/services" element={<Services />}/>
         </Routes>
      </BrowserRouter>
+     <footer>
+    <p>Brian Joseph Gomez Velasco - Todos los derechos reservados &copy; 2024</p>
+  </footer>
     </div>
   )
 }

@@ -3,7 +3,7 @@
     align-items: center;
     margin: 0 20px; 
     padding: 1em; 
-    background-color: #f0f0f0; 
+    background-color: #ffffff98; 
     border-radius: 10px;
     transition: transform 0.5s; 
     margin: 0 auto;
@@ -20,7 +20,7 @@
 .imagen-presentacion{
     display: block;
     width: 100%;
-    border-radius: 50px; 
+    border-radius: 50%; 
 }
 
 
@@ -38,7 +38,7 @@
 }
 
 .nombres-presentacion {
-    color: #9b0000;
+    color: #4a1d0b;
     font-size: 5rem;
     font-weight: bold;
     font-family: monospace;
@@ -47,7 +47,7 @@
 
   .nombres-presentacion:hover{
     .nombres{
-      color: #9b0000;
+      color: #4a1d0b;
     }
   }
 
@@ -90,7 +90,7 @@
 }
 .desarrollador-presentacion:hover span {
 
-  color: #9b0000;
+  color: #4a1d0b;
   text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff;
 }
 

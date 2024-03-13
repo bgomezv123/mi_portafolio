@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from 'react';
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -9,11 +9,34 @@ import imagen2 from './2.webp'
 import imagen3 from './3.jpg'
 
 export default function SimpleSlider() {
+
+  const [slidesToShow, setSlidesToShow] = useState(3);
+
+  useEffect(() => {
+    const handleResize = () => {
+      // Cambia el número de diapositivas a mostrar según el ancho de la pantalla
+      if (window.innerWidth <= 768) {
+        setSlidesToShow(1); // Muestra solo una diapositiva en dispositivos móviles
+      } else {
+        setSlidesToShow(3); // Muestra tres diapositivas en otros tamaños de pantalla
+      }
+    };
+
+    // Agrega el evento de cambio de tamaño de la ventana
+    window.addEventListener('resize', handleResize);
+
+    // Limpia el evento al desmontar el componente
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
+
   var settings = {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 3,
+    slidesToShow: slidesToShow,
     slidesToScroll: 3,
     className: "inner-div"
   };

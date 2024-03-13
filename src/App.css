@@ -5,9 +5,15 @@
 
 html, body{
   font-size: 18px;
-  background-color: rgb(255, 255, 255);
+  background: linear-gradient(45deg, #633500, #721939, #312a5c, #10e7e7);
 
 }
 
 
 
+footer {
+  background-color: #000000; /* Color de fondo del pie de página */
+  color: #fff; /* Color del texto del pie de página */
+  padding: 40px; /* Espaciado interno del pie de página */
+  text-align: center; /* Alineación del texto al centro */
+}
