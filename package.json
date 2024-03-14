@@ -1,16 +1,17 @@
 {
   "name": "miportafoliofront",
+  "homepage": "https://bgomezv123.github.io/mi_portafolio/",
   "private": true,
-  "homepage": "https://bgomezv123.github.io/brian_gomez_v",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "predeploy" : "npm run build",
-    "deploy": "gh-pages -d build",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy" : "npm run build",
+    "deploy": "gh-pages -d dist"
+
   },
   "dependencies": {
     "moment": "2.29.4",
