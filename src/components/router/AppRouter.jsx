@@ -20,6 +20,7 @@ const AppRouterContent = () => {
             <>
 
         <Routes>
+          <Route path="mi_portafolio/*" element={<Home />}/>
           <Route path="about/*" element={<About />}/>
           <Route path="services/*" element={<Services />}/>
         </Routes>
