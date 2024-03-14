@@ -20,7 +20,7 @@
     font-weight: bold;
     color: #bbd5c3;
     border-right: 4px solid #fd0101;
-    animation: cursor 1s infinite step-end, typing 10s infinite steps(11);
+    animation: cursor 0.5s infinite step-end, typing 10s infinite steps(12);
     white-space: nowrap;
     overflow: hidden;
   }
@@ -31,8 +31,8 @@
   
   @keyframes typing{
     0%{ width: 0ch} /*Text is hidden*/
-    30%{ width: 11ch;} /*The enitre header will be typed out*/
-    80%{ width: 11ch;} /*Text stays visible*/
+    30%{ width: 12ch;} /*The enitre header will be typed out*/
+    80%{ width: 12ch;} /*Text stays visible*/
     90%{ width: 0ch;} /*Text is deleted*/
     100%{ width: 0ch;} /*Text stays hidden*/
   }

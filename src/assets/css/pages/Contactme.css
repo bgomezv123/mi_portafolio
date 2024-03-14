@@ -1,0 +1,27 @@
+.contenedor-contactme-page{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.contenedor-habilidades {
+    font-size: 10px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* Define 5 columnas con igual tamaño */
+    gap: 1px; /* Espacio entre elementos */
+    padding: 5px;
+    margin: 20em 30em; /* Espacio alrededor de la grilla */
+    background-color: #ffffff98;
+    border-radius: 10px; 
+}
+
+
+@media (max-width: 768px) {
+    .contenedor-habilidades { 
+        display: flex;
+        width: 50%;
+        height: 50%;
+        flex-direction: column; /* Cambia la dirección a columna en dispositivos pequeños */
+    }
+}

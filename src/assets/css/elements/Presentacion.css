@@ -38,7 +38,7 @@
 }
 
 .nombres-presentacion {
-    color: #4a1d0b;
+    color: #981200;
     font-size: 5rem;
     font-weight: bold;
     font-family: monospace;
@@ -47,7 +47,7 @@
 
   .nombres-presentacion:hover{
     .nombres{
-      color: #4a1d0b;
+      color: #981200;
     }
   }
 
@@ -90,7 +90,7 @@
 }
 .desarrollador-presentacion:hover span {
 
-  color: #4a1d0b;
+  color: #981200;
   text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff;
 }
 

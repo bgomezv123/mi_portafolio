@@ -32,24 +32,40 @@ export const Navbar = () => {
   return (
     <nav className={`navbar ${scrolled ? "scrolled" : ""}`}>
       <ul className="contenedor-redes-sociales">
-        <li>
-          <FaFacebook className="icono-red-social"/>
-        </li>
-        <li>
-          <FaInstagramSquare className="icono-red-social"/>
-        </li>
-        <li>
-          <FaLinkedin className="icono-red-social" />
-        </li>
-        <li>
-          <FaGithub className="icono-red-social"/>
-        </li>
-        <li>
-          <IoLogoWhatsapp className="icono-red-social"/>
-        </li>
-        <li>
-          <SiGmail className="icono-red-social"/>
-        </li>
+        <a  href="https://www.facebook.com/brian.gomez.18400700" target="_blank">
+          <li>
+            <FaFacebook className="icono-red-social"/>
+          </li>
+        </a>
+        <a  href="https://www.instagram.com/briangomezzzzzz/" target="_blank">
+          <li>
+            <FaInstagramSquare className="icono-red-social"/>
+          </li>
+        </a>
+        <a  href="https://www.linkedin.com/in/brian-joseph-gomez-velasco-3b132a253/" target="_blank">
+          <li>
+            <FaLinkedin className="icono-red-social" />
+          </li>
+          </a>
+          <a  href="https://github.com/bgomezv123" target="_blank">
+
+          <li>
+            <FaGithub className="icono-red-social"/>
+          </li>
+
+          </a>
+          <a  href="https://wa.me/51945388033" target="_blank">
+
+          <li>
+            <IoLogoWhatsapp className="icono-red-social"/>
+          </li>
+          </a>
+          <a  href="mailto:bgomezv@unsa.edu.pe" target="_blank">
+
+          <li>
+            <SiGmail className="icono-red-social"/>
+          </li>
+          </a>
       </ul>
 
 
@@ -63,10 +79,10 @@ export const Navbar = () => {
 
 		  <ul className={menuOpen ? "open" : ""}>					
 				<li>
-						<NavLink className="link-navbar" to='/about'>About</NavLink>
+						<NavLink className="link-navbar" to='/about'>Acerca de mi</NavLink>
 				</li>
 				<li>
-						<NavLink  className="link-navbar" to='/services'>Services</NavLink>
+						<NavLink  className="link-navbar" to='/services'>Contactame</NavLink>
 				</li>
       </ul>
     </nav>

@@ -14,13 +14,13 @@
 
   @media screen and (max-width: 900px) {
     .grid-container {
-        grid-template-columns: repeat(4, 1fr); /* Define 5 columnas con igual tamaño */
+        grid-template-columns: repeat(5, 1fr); /* Define 5 columnas con igual tamaño */
     }
   }
 
   @media screen and (max-width: 700px) {
     .grid-container {
-        grid-template-columns: repeat(2, 1fr); /* Define 5 columnas con igual tamaño */
+        grid-template-columns: repeat(3, 1fr); /* Define 5 columnas con igual tamaño */
     }
   }
 

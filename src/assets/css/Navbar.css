@@ -1,3 +1,9 @@
+
+a {
+    text-decoration: none; 
+    color: #ffffff; 
+}
+
 .logo-brian{
     filter: invert(100%) grayscale(100%) ;
     width: 5em;
@@ -12,7 +18,7 @@
     
 }
 .active{
-    background-color: #3b3b3b;
+    background-color: #00e1ff78;
     
 }
 
@@ -32,8 +38,13 @@
     background-color: #ffffffcf;
     color: black;
     height: auto;
+    a{
+        color: black; 
+
+    }
     .title{
         color: black;
+
     }
     .link-navbar{
         color: black;
@@ -87,7 +98,7 @@ nav ul li {
 }
 
 .navbar ul li a:not(.active):hover {
-    background-color:#707070 ;
+    background-color:#42d0f75c ;
 }
 
 .navbar .menu {

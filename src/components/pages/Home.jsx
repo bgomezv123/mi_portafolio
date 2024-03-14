@@ -1,8 +1,5 @@
 import '../../assets/css/pages/Home.css'
-import { Link, BrowserRouter } from 'react-router-dom'
 import imagen1 from '../../assets/logo/1708123090905.jpeg'
-import imagen2 from './2.webp'
-import imagen3 from './3.jpg'
 import Presentacion from '../elements/Presentacion'
 import SimpleSlider from '../elements/Carrusel'
 import Grid from '../elements/CuadroHabilidades'
@@ -15,7 +12,7 @@ export const Home = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.pageYOffset > 100) { 
+      if (window.scrollY > 100) { 
         setShowButton(true);
       } else {
         setShowButton(false);
@@ -42,7 +39,7 @@ export const Home = () => {
 
 			<div className='contenedor-welcome-barra-navegacion'>
 				<div className='contenedor-welcome-portafolio-titulo'>
-       		<h1 className='welcome-portafolio-titulo'>{">"}WELCOME!</h1>
+       		<h1 className='welcome-portafolio-titulo'>{">"}WELCOME! {":)"}</h1>
 				</div>
         <nav className='barra-navegacion-home'>
           <ul>
@@ -60,7 +57,7 @@ export const Home = () => {
 						nombres={"BRIAN"}
 						apellidos={"GOMEZ"}
 						desarrollador={"Full-Stack"}
-						texto={"Soy egresado de la Escuela Profesional de Ingeniería de Sistemas en la Universidad Nacional de San Agustín - Arequipa (UNSA). Cuento con un sólido interés en la tecnología y el desarrollo de software. Apasionado por resolver desafíos tanto técnicos como intelectuales y aprender de manera continua. Comprometido con el crecimiento profesional y la contribución a proyectos innovadores en el campo de la informática."}
+						texto={"Soy desarrollador Full-Stack egresado de la Escuela Profesional de Ingeniería de Sistemas en la Universidad Nacional de San Agustín de Arequipa. Cuento con un sólido interés en la tecnologías emergentes y el desarrollo Web. Apasionado por resolver desafíos tanto técnicos como intelectuales y aprender de manera continua. Comprometido con el crecimiento profesional y la contribución a proyectos innovadores en el campo de la informática."}
 						imagen={imagen1}
 					>
 					</Presentacion>

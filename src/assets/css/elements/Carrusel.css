@@ -4,7 +4,6 @@
 
 }
 
-
 .contenedor-carrusel-proyecto{
   margin: 1em auto;
 }
@@ -12,7 +11,7 @@
 
 .slick-prev:before,
 .slick-next:before {
-  color: black;
+  color: #b7b7b7de;  
 }
 
 

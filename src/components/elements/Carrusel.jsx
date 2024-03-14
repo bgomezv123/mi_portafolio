@@ -4,13 +4,24 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "../../assets/css/elements/Carrusel.css"
 import Proyecto  from "./Proyecto";
-import imagen1 from './1.png'
-import imagen2 from './2.webp'
-import imagen3 from './3.jpg'
+import portillo1 from '/proyectos/portillo1.png'
+import portillo2 from '/proyectos/portillo2.png'
+import ra1 from '/proyectos/ra1.png'
+import ra2 from '/proyectos/ra2.png'
+import edge1 from '/proyectos/edge1.png'
+import edge2 from '/proyectos/edge2.png'
+import portafolio1 from '/proyectos/portafolio1.png'
+import portafolio2 from '/proyectos/portafolio2.png'
 
 export default function SimpleSlider() {
 
-  const [slidesToShow, setSlidesToShow] = useState(3);
+  let statSlidesNum = 3
+
+  if (window.innerWidth <= 768){
+    statSlidesNum = 1
+  }
+
+  const [slidesToShow, setSlidesToShow] = useState(statSlidesNum);
 
   useEffect(() => {
     const handleResize = () => {
@@ -37,41 +48,70 @@ export default function SimpleSlider() {
     infinite: true,
     speed: 500,
     slidesToShow: slidesToShow,
-    slidesToScroll: 3,
+    slidesToScroll: slidesToShow,
     className: "inner-div"
   };
   return (
 		<div className="contenedor-carrusel-proyectos">
 			<Slider {...settings}>
-				<div className="contenedor-carrusel-proyecto">
+      <div className="contenedor-carrusel-proyecto">				
           <Proyecto
-            titulo={"aaaaaaaaaaaaaaaaaa"}
-            imagen={imagen1}
-            texto={"Si tienes palabras largas que están causando desbordamiento dentro de tu contenedor, puedes utilizar la propiedad word-wrap: break-word; o su equivalente moderno overflow-wrap: break-word; en CSS. Esto permitirá que las palabras largas se dividan en múltiples líneas para ajustarse al ancho del contenedor. Aquí te muestro cómo implementarlo:"}>
-            </Proyecto>
-				</div>
-        <div className="contenedor-carrusel-proyecto">				
-        <Proyecto
-					titulo={"bbbbbbbbbbbbbbbbbb"}
-          imagen={imagen2}
-					texto={"Si tienes palabras largas que están causando desbordamiento dentro de tu contenedor, puedes utilizar la propiedad word-wrap: break-word; o su equivalente moderno overflow-wrap: break-word; en CSS. Esto permitirá que las palabras largas se dividan en múltiples líneas para ajustarse al ancho del contenedor. Aquí te muestro cómo implementarlo:"}>
-					</Proyecto>
-				</div>
-        <div className="contenedor-carrusel-proyecto">				
-        <Proyecto
-					titulo={"cccccccccccccccccc"}
-          imagen={imagen3}
-					texto={"Si tienes palabras largas que están causando desbordamiento dentro de tu contenedor, puedes utilizar la propiedad word-wrap: break-word; o su equivalente moderno overflow-wrap: break-word; en CSS. Esto permitirá que las palabras largas se dividan en múltiples líneas para ajustarse al ancho del contenedor. Aquí te muestro cómo implementarlo:"}>
+					  titulo={"Mi Portafolio - Brian Gomez Velasco"}
+            imagen1={portafolio1}
+            imagen2={portafolio2}
+					  texto={"Pagina Web desarrollada con React Js, es mi portafolio personal que cuenta con mis proyectos personales, mis principales habilidades, informacion academica y mis redes sociales"}
+            tecnologia={"Web"}
+            linkGithub={"https://github.com/bgomezv123/mi_portafolio"}
+            >
+              
+
+
 					</Proyecto>
 				</div>
 
+				<div className="contenedor-carrusel-proyecto">
+            <Proyecto
+            titulo={"CRM Inmobiliaria Portillo S.A.C"}
+            imagen1={portillo1}
+            imagen2={portillo2}
+
+            texto={"Sistema desarrollado con REACT y DJANGO, es un CRM para la gestión de clientes de la empresa Portillo Construcciones S.A.C. Comprende 7 modulos tales como: Gestión de Roles, Gestión de Usuarios, Gestión de Campañas, Gestión de Proyectos, Gestión de Productos y Gestión de Clientes"}
+            tecnologia={"Web"}
+            linkGithub={"https://github.com/portilloERP/ERP_PORTILLO"}
+
+            >
+     
+            </Proyecto>
+				</div>
         <div className="contenedor-carrusel-proyecto">				
-        <Proyecto
-					titulo={"ddddddddddddddddddd"}
-          imagen={imagen1}
-					texto={"Si tienes palabras largas que están causando desbordamiento dentro de tu contenedor, puedes utilizar la propiedad word-wrap: break-word; o su equivalente moderno overflow-wrap: break-word; en CSS. Esto permitirá que las palabras largas se dividan en múltiples líneas para ajustarse al ancho del contenedor. Aquí te muestro cómo implementarlo:"}>
+          <Proyecto
+					  titulo={"StyleApp - Realidad Aumentada"}
+            imagen1={ra1}
+            imagen2={ra2}
+					  texto={"Aplicacion movil android, desarrollada con Kotlin y con el SDK Arcore, para hacer uso de la tecnologia de realidad aumentada sin la necesidad de tener un dispositvo movil potente, los modelos 3D fueron desarrollados con Blender"}
+            tecnologia={"Movil"}
+            linkGithub={"https://github.com/bgomezv123/ARCORE_FILTROS_V1"}
+
+            >
+
+
 					</Proyecto>
 				</div>
+        <div className="contenedor-carrusel-proyecto">				
+          <Proyecto
+					  titulo={"Sistema de domótica - Cámara de seguridad y control de luces"}
+            imagen1={edge1}
+            imagen2={edge2}
+				    texto={"Sistema de domótica utilizando una arquitectura de EDGE computing, este sistema cuenta con una aplicacion movil para la gestion remota de luces y camara de seguridad, un rasperry(GNU/LINUX) para centralizar los dipositivos IoT (ESP8266 y ESP32CAM) y finalmente varios servicios cloud computing de AWS"}
+            tecnologia={"Iot"}
+            linkGithub={"https://github.com/bgomezv123/PE_EdgeComputing"}
+
+            >
+					</Proyecto>
+				</div>
+
+
+
 			</Slider>
 		</div>
 	);
